@@ -4,7 +4,7 @@ use std::io::Write;
 use std::net::UdpSocket;
 
 fn main() {
-    let localaddr = "127.0.0.1:25368";
+    let localaddr = "0.0.0.0:25368";
 
     let socket = UdpSocket::bind(localaddr).expect("Failed to bind to ip");
 
