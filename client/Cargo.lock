@@ -3,12 +3,3 @@
 [[package]]
 name = "client"
 version = "0.1.0"
-dependencies = [
- "lines_from_file",
-]
-
-[[package]]
-name = "lines_from_file"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7597d624e16945d3021121ab26f32b6c5fa24c50b64b1a053ad0d90cdd1dec88"
