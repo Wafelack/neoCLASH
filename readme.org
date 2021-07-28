@@ -1,0 +1,11 @@
+* kolbau
+
+kolbau (lujvo: kolme + bangu): anthracite language
+
+kolbau is a statically and strongly typed functional programming language.
+
+** License
+
+This work's documentation and specification are licensed under the [[./DOC-LICENSE][GNU Free Documentation License version 1.3 or any later version.]].
+
+This work's source code is licensed under the [[./LICENSE][GNU General Public License version 3.0 or any later version]].
