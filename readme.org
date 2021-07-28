@@ -6,6 +6,4 @@ kolbau is a statically and strongly typed functional programming language.
 
 ** License
 
-This work's documentation and specification are licensed under the [[./docs/LICENSE][FDLv1.3+]].
-
-This work's source code is licensed under the [[./LICENSE][GPLv3+]].
+This work is licensed under the [[./COPYING][GNU General Public License version 3.0 or any later version]].

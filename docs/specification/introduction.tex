@@ -1,0 +1,10 @@
+\part{Introduction}
+    \setcounter{page}{5}
+    Kolbau is a strongly and statically typed functional language, aiming at allowing programmers to write short and expressive code to do many things through powerful features such as traits, closures or lazy evaluation. It runs on a virtual machine, which combines good cross-platform possibilities and acceptable performances. \\
+    
+    Its syntax is based on LISP, for two reasons, the first is that it is easy to parse, and allows to concentrate on more important things, and the second is that this syntax is very elegant and easy to understand. 
+    \\ However, in order to make it lighter, some parentheses are optional, when there is no ambiguity possible. 
+    \\ For example, the code \verb|(defn max? [x y] (if (> x y) x y))| can be written as \verb|defn max? [x y] if (> x y) x y|. \\
+ 
+    This specification specifies Kolbau programs syntax, features, concepts, bytecode and VM structure, required library methods and all the ecosystem around Kolbau.
+

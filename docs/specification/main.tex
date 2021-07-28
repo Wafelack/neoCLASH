@@ -1,0 +1,35 @@
+\documentclass[a4paper, 11pt, oneside]{book}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linktoc=all,
+    linkcolor=black,
+}
+
+\let\Oldpart\part
+\newcommand{\parttitle}{}
+\renewcommand{\part}[1]{\Oldpart{#1}\renewcommand{\parttitle}{#1}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\parttitle::\rightmark}
+\lhead{Kolbau specification}
+\cfoot{\thepage}
+
+\title{The Kolbau Specification}
+\author{Wafelack}
+
+\begin{document}
+  \maketitle
+
+  \setcounter{page}{2}
+  \tableofcontents
+
+  \input{introduction}
+\end{document}
