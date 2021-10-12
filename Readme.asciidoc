@@ -5,6 +5,12 @@ document describing the steps to turn CLisp into a basic shell on GNU/Linux. +
 This repository is based upon this document to provide a modern and handy
 LISPy shell experience.
 
+=== Roadmap
+
+* [ ] Pipelines
+* [ ] LISP code expansion in strings.
+* [ ] Job control.
+
 === Installation
 
 Prerequisties: link:https://clisp.sourceforge.io/[+CLISP+].
