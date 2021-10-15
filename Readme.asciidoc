@@ -5,6 +5,26 @@ document describing the steps to turn CLisp into a basic shell on GNU/Linux. +
 This repository is based upon this document to provide a modern and handy
 LISPy shell experience.
 
+=== Features
+
+==== Running commands
+
+The +#{<command> <args>* }+ form can be used to evaluate shell commands directly in the REPL.
+
+[source,lisp]
+----
+#{ls --color=always \. }
+----
+
+==== Evaluating LISP forms inside commands
+
+In a command, the S-Expression after the +*expansion-start*+ (default: +\#$+) character is evaluated as a LISP form, instead of being turned into a string.
+
+[source,lisp]
+----
+#{ls $(cd) --color=always }
+----
+
 === Roadmap
 
 * [ ] Pipelines
