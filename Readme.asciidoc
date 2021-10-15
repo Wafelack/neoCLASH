@@ -11,6 +11,15 @@ LISPy shell experience.
 * [x] LISP code expansion in strings.
 * [ ] Job control.
 
+=== Usage
+
+* From a POSIX shell:
+
+[source,bash]
+----
+$ $([ -z ${PREFIX+x} ] && echo "/usr/" || echo ${PREFIX})/bin/nch
+----
+
 === Installation
 
 Prerequisties: link:https://clisp.sourceforge.io/[+CLISP+].

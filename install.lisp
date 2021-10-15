@@ -3,7 +3,7 @@
 
 (defvar *PREFIX*
   (let ((v (ext:getenv "PREFIX")))
-    (when (not v) "/usr")))
+    (if v v "/usr/")))
 
 (format T "Using prefix: ~a.~%" *PREFIX*)
 

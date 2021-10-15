@@ -38,4 +38,6 @@
                                 (setf (readtable-case *readtable*) :preserve)
                                 (let ((cmd (read stream)))
                                   (setf (readtable-case *readtable*) :upcase)
-                                  (list 'ext:run-program (princ-to-string cmd) :arguments (append '(list) (read-turn stream))))))
+                                  (let ((cmd (list 'ext:run-program (princ-to-string cmd) :arguments (append '(list) (read-turn stream)))))
+                                    (setf (readtable-case *readtable*) :upcase)
+                                    cmd))))
