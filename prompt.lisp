@@ -13,7 +13,7 @@
 ;;
 ;;  You should have received a copy of the GNU General Public License
 ;;  along with neoCLASH.  If not, see <https://www.gnu.org/licenses/>.
-(load "utils.lisp")
+(load (merge-pathnames "utils.lisp" *load-truename*))
 
 (setq custom:*prompt-start*
       (lambda () (format NIL "(~c[1;32m~a~c[0m)~%" #\ESC (reduce-home (cd)) #\ESC)))

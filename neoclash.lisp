@@ -14,5 +14,5 @@
 ;;
 ;;  You should have received a copy of the GNU General Public License
 ;;  along with neoCLASH.  If not, see <https://www.gnu.org/licenses/>.
-(load "prompt.lisp")
-(load "macros.lisp")
+(load (merge-pathnames "prompt.lisp" *load-truename*))
+(local-load "macros.lisp")

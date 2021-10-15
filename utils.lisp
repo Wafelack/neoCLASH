@@ -13,7 +13,6 @@
 ;;
 ;;  You should have received a copy of the GNU General Public License
 ;;  along with neoCLASH.  If not, see <https://www.gnu.org/licenses/>.
-
 (defvar *HOME* (ext:getenv "HOME"))
 
 (defun reduce-home (path)
@@ -21,3 +20,6 @@
     (if (eq 0 (search *HOME* p))
       (concatenate 'string "~" (subseq p (string-width *HOME*)))
       p)))
+
+(defmacro local-load (path)
+  `(load (merge-pathnames ,path *load-truename*)))
