@@ -8,7 +8,7 @@ LISPy shell experience.
 === Roadmap
 
 * [ ] Pipelines
-* [ ] LISP code expansion in strings.
+* [x] LISP code expansion in strings.
 * [ ] Job control.
 
 === Installation
@@ -17,7 +17,7 @@ Prerequisties: link:https://clisp.sourceforge.io/[+CLISP+].
 
 [source,bash]
 ----
-clisp install.lisp
+[PREFIX=/path/(default:/usr)] clisp install.lisp
 ----
 
 === License

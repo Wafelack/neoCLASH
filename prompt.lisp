@@ -19,7 +19,10 @@
       (lambda () (format NIL "(~c[1;32m~a~c[0m)~%" #\ESC (reduce-home (cd)) #\ESC)))
 
 (setq custom:*prompt-body*
-      (lambda () (format NIL "~c[34m<~c[1;36m~a~c[34m:" #\ESC #\ESC ext:*command-index* #\ESC)))
+      (lambda () (setq ext:*command-index* (+ ext:*command-index* 1)) (format NIL "~c[34m<~c[1;36m~a~c[34m:" #\ESC #\ESC ext:*command-index* #\ESC)))
 
 (setq custom:*prompt-finish*
       (lambda () (format NIL "~c[1;36m~a~c[34m>~c[0m " #\ESC (ext:package-shortest-name *package*) #\ESC #\ESC)))
+
+(setq custom:*prompt-break*
+      (lambda () (format NIL "~c[31m~a " #\ESC (ext:break-level))))
